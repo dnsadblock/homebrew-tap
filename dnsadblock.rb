@@ -2,24 +2,24 @@
 class Dnsadblock < Formula
   desc "dnsadblock DNS Proxy"
   homepage "https://dnsadblock.com"
-  version "0.2.33-beta.11"
+  version "0.2.33-beta.12"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/dnsadblock/proxy-release/releases/download/v0.2.33-beta.11/dnsadblock_0.2.33-beta.11_darwin_amd64.tar.gz"
-    sha256 "2378c724e11afd561ea4b08ba5445efaeacd3753120af0236ae2a207748151dd"
+    url "https://github.com/dnsadblock/proxy-release/releases/download/v0.2.33-beta.12/dnsadblock_0.2.33-beta.12_darwin_amd64.tar.gz"
+    sha256 "078a71afd42de6063bc5f2a56e00baab7b0ce0c484f2bd8559fed49c5e0b2e9d"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/dnsadblock/proxy-release/releases/download/v0.2.33-beta.11/dnsadblock_0.2.33-beta.11_linux_amd64.tar.gz"
-      sha256 "9f5c648519e6c5537e041b5e2f28fa13ff6e057d338223e9d6d1e907b81ad2ac"
+      url "https://github.com/dnsadblock/proxy-release/releases/download/v0.2.33-beta.12/dnsadblock_0.2.33-beta.12_linux_amd64.tar.gz"
+      sha256 "7c910c0d12138885a90d0113b8513fd6ad9950a4d5f0f83a7126ddbcf5589b50"
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/dnsadblock/proxy-release/releases/download/v0.2.33-beta.11/dnsadblock_0.2.33-beta.11_linux_arm64.tar.gz"
-        sha256 "28a5cc0f3223615137e64dbc27674b71ec3706993ca8b84baabec4e187cf24e7"
+        url "https://github.com/dnsadblock/proxy-release/releases/download/v0.2.33-beta.12/dnsadblock_0.2.33-beta.12_linux_arm64.tar.gz"
+        sha256 "50a13a0dcd10281491aac7bf45f69a43793ca3a7ea83b6bcdee0937a11583158"
       else
-        url "https://github.com/dnsadblock/proxy-release/releases/download/v0.2.33-beta.11/dnsadblock_0.2.33-beta.11_linux_armv6.tar.gz"
-        sha256 "f52213d24a8189932440779ab8ed14a2cbea8ebcb6d27afd697f4b4b2480b777"
+        url "https://github.com/dnsadblock/proxy-release/releases/download/v0.2.33-beta.12/dnsadblock_0.2.33-beta.12_linux_armv6.tar.gz"
+        sha256 "1af5f536e03a9b64bafc1bd1937c27253f5035c183346e2865056df25b170596"
       end
     end
   end
