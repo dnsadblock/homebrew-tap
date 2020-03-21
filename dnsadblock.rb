@@ -2,24 +2,24 @@
 class Dnsadblock < Formula
   desc "dnsadblock DNS Proxy"
   homepage "https://dnsadblock.com"
-  version "0.2.33-beta.6"
+  version "0.2.33-beta.8"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/dnsadblock/proxy-release/releases/download/v0.2.33-beta.6/dnsadblock_0.2.33-beta.6_darwin_amd64.tar.gz"
-    sha256 "860d5f2ba66dc2333612ade55cec0a775f5124066b78bb55e1734e0d6dbe3967"
+    url "https://github.com/dnsadblock/proxy-release/releases/download/v0.2.33-beta.8/dnsadblock_0.2.33-beta.8_darwin_amd64.tar.gz"
+    sha256 "72db66fa36c94dbb058a0af4237ac6c6e65d75b37a135c3b5df8eb6d116a819b"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/dnsadblock/proxy-release/releases/download/v0.2.33-beta.6/dnsadblock_0.2.33-beta.6_linux_amd64.tar.gz"
-      sha256 "fe2ca49e5a8f9a51ec1c200026163316ebe135ab2a6859ba15c0c346edf84c1a"
+      url "https://github.com/dnsadblock/proxy-release/releases/download/v0.2.33-beta.8/dnsadblock_0.2.33-beta.8_linux_amd64.tar.gz"
+      sha256 "8232693b5cc915a4ad5a1699e523870b62cdecc0058bcb4d7d805c711760fbfd"
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/dnsadblock/proxy-release/releases/download/v0.2.33-beta.6/dnsadblock_0.2.33-beta.6_linux_arm64.tar.gz"
-        sha256 "a85cefd3d06f23a274618ac982f0ed3b5acfe563fb97dedc2835b789c1e67e45"
+        url "https://github.com/dnsadblock/proxy-release/releases/download/v0.2.33-beta.8/dnsadblock_0.2.33-beta.8_linux_arm64.tar.gz"
+        sha256 "a05ababf6a80aaddd9a0ccd8d748a48de6d3347faf5dc686a5121e93743622a4"
       else
-        url "https://github.com/dnsadblock/proxy-release/releases/download/v0.2.33-beta.6/dnsadblock_0.2.33-beta.6_linux_armv6.tar.gz"
-        sha256 "4272e02cbd420f6d765872b4499a3728878207a557afd5f9ea76027092ae9392"
+        url "https://github.com/dnsadblock/proxy-release/releases/download/v0.2.33-beta.8/dnsadblock_0.2.33-beta.8_linux_armv6.tar.gz"
+        sha256 "d428d13438175b0089f7b13d82ad591027bd1675e5e000082eed397af687c7a8"
       end
     end
   end
