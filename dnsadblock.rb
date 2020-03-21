@@ -2,24 +2,24 @@
 class Dnsadblock < Formula
   desc "dnsadblock DNS Proxy"
   homepage "https://dnsadblock.com"
-  version "0.2.33-beta.1"
+  version "0.2.33-beta.2"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/dnsadblock/proxy-release/releases/download/v0.2.33-beta.1/dnsadblock_0.2.33-beta.1_darwin_amd64.tar.gz"
-    sha256 "9cc8a23f7c326974222a138a40dc67c664ca83a67021ba46caa13360e29187ae"
+    url "https://github.com/dnsadblock/proxy-release/releases/download/v0.2.33-beta.2/dnsadblock_0.2.33-beta.2_darwin_amd64.tar.gz"
+    sha256 "1a6624575808a07d38695b63a30941277e604d572dcf6638b52a070f39dd81f0"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/dnsadblock/proxy-release/releases/download/v0.2.33-beta.1/dnsadblock_0.2.33-beta.1_linux_amd64.tar.gz"
-      sha256 "fcfba5e8e98f415c7f68ed29dd27c16a98d6ef69ddc911a3113a4ec59a3dbcfa"
+      url "https://github.com/dnsadblock/proxy-release/releases/download/v0.2.33-beta.2/dnsadblock_0.2.33-beta.2_linux_amd64.tar.gz"
+      sha256 "9f66e90eba6f6200b67c9d5ebcc4e8d40ff1d81cf3ee832be18f2ad87bf64a1b"
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/dnsadblock/proxy-release/releases/download/v0.2.33-beta.1/dnsadblock_0.2.33-beta.1_linux_arm64.tar.gz"
-        sha256 "d70d3244a710dd5734a2afc1f7d55fc243a20e6f0472275f355e3d00cb761bef"
+        url "https://github.com/dnsadblock/proxy-release/releases/download/v0.2.33-beta.2/dnsadblock_0.2.33-beta.2_linux_arm64.tar.gz"
+        sha256 "e8b63441ee5798e86640b3eecbf21666bd6319323d7f171de36ed58b4631bb8a"
       else
-        url "https://github.com/dnsadblock/proxy-release/releases/download/v0.2.33-beta.1/dnsadblock_0.2.33-beta.1_linux_armv6.tar.gz"
-        sha256 "d46b715f14f3e9d7fe26b93e47b352211727e7141349cdf7a324070180bf35ed"
+        url "https://github.com/dnsadblock/proxy-release/releases/download/v0.2.33-beta.2/dnsadblock_0.2.33-beta.2_linux_armv6.tar.gz"
+        sha256 "9e5ee282647670b2a550a79ade1a6f743d72486e708f107edbcc2e8be4bd0fa4"
       end
     end
   end
