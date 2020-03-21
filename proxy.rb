@@ -2,24 +2,24 @@
 class Proxy < Formula
   desc "dnsadblock DNS Proxy"
   homepage "https://dnsadblock.com"
-  version "0.2.33-beta.21"
+  version "0.2.33-beta.22"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/dnsadblock/proxy-release/releases/download/v0.2.33-beta.21/proxy_0.2.33-beta.21_darwin_amd64.tar.gz"
-    sha256 "68f492c2e84023a12d29f5750a722ade946ab09c195a375b7a2c28ab33abd2e6"
+    url "https://github.com/dnsadblock/proxy-release/releases/download/v0.2.33-beta.22/proxy_0.2.33-beta.22_darwin_amd64.tar.gz"
+    sha256 "c8d3f280237f468db70850b9510f1568cb3aa5c5e342ab079f2cb9c2dd20b4c2"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/dnsadblock/proxy-release/releases/download/v0.2.33-beta.21/proxy_0.2.33-beta.21_linux_amd64.tar.gz"
-      sha256 "9424aed9db26c415f7ee6de3eef5c87ea95aaeb0690df2dd921e6c8ea8224026"
+      url "https://github.com/dnsadblock/proxy-release/releases/download/v0.2.33-beta.22/proxy_0.2.33-beta.22_linux_amd64.tar.gz"
+      sha256 "56453f5efd571b2359940dbf4420c75133a8d36891c0e7b1971ab422636d1ec6"
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/dnsadblock/proxy-release/releases/download/v0.2.33-beta.21/proxy_0.2.33-beta.21_linux_arm64.tar.gz"
-        sha256 "959a9e3f74da762e33b4841b692ab4e0f90040b97857c97866e153dcc5dbaa1a"
+        url "https://github.com/dnsadblock/proxy-release/releases/download/v0.2.33-beta.22/proxy_0.2.33-beta.22_linux_arm64.tar.gz"
+        sha256 "f5a95cdd164bb4c7893db8cc49e64ed7cfd4b8fa3cc861aee68518c6bcb515fe"
       else
-        url "https://github.com/dnsadblock/proxy-release/releases/download/v0.2.33-beta.21/proxy_0.2.33-beta.21_linux_armv6.tar.gz"
-        sha256 "b17581d0ab17b1d5a5224b2c117821afb2ee4861108dfeb9926da2577e2745e7"
+        url "https://github.com/dnsadblock/proxy-release/releases/download/v0.2.33-beta.22/proxy_0.2.33-beta.22_linux_armv6.tar.gz"
+        sha256 "35208ea4d1e2c0cf75b67f93a115400001f96daa64aeba9ff18f44fc9ea8cf13"
       end
     end
   end
