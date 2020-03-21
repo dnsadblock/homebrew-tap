@@ -2,24 +2,24 @@
 class Dnsadblock < Formula
   desc "dnsadblock DNS Proxy"
   homepage "https://dnsadblock.com"
-  version "0.2.33-beta.13"
+  version "0.2.33-beta.14"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/dnsadblock/proxy-release/releases/download/v0.2.33-beta.13/dnsadblock_0.2.33-beta.13_darwin_amd64.tar.gz"
-    sha256 "e8a2409bf6fb6096a0ebd2ad1a3262eefbb0ed8a965aa0ddd2ab4b57f0c9fe7b"
+    url "https://github.com/dnsadblock/proxy-release/releases/download/v0.2.33-beta.14/dnsadblock_0.2.33-beta.14_darwin_amd64.tar.gz"
+    sha256 "ddfb8f91ae9e12b180b6fa875e774c59e419115a44391337f8031587137acd2d"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/dnsadblock/proxy-release/releases/download/v0.2.33-beta.13/dnsadblock_0.2.33-beta.13_linux_amd64.tar.gz"
-      sha256 "a1bc75d95b340d578808067b82f5edba1885efdf598471421bf1bd49816f7f8d"
+      url "https://github.com/dnsadblock/proxy-release/releases/download/v0.2.33-beta.14/dnsadblock_0.2.33-beta.14_linux_amd64.tar.gz"
+      sha256 "7ad95f9fe8274dbc110cf21bd19c70e8b25b1852569d121a6702f5a8c56be00c"
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/dnsadblock/proxy-release/releases/download/v0.2.33-beta.13/dnsadblock_0.2.33-beta.13_linux_arm64.tar.gz"
-        sha256 "7006ee59f8eb970e6779dfd9be08fff8801f1c4e8959216ddf223b81056912c1"
+        url "https://github.com/dnsadblock/proxy-release/releases/download/v0.2.33-beta.14/dnsadblock_0.2.33-beta.14_linux_arm64.tar.gz"
+        sha256 "b6897c171c91c266ecde45186803aaf976b650d03fe4bf4f27b8c0a8a2bfb9b4"
       else
-        url "https://github.com/dnsadblock/proxy-release/releases/download/v0.2.33-beta.13/dnsadblock_0.2.33-beta.13_linux_armv6.tar.gz"
-        sha256 "a715ddb28603e0e32a2275a6948c3a1c96241ec73c9d25a2f2fd1467095dfb5d"
+        url "https://github.com/dnsadblock/proxy-release/releases/download/v0.2.33-beta.14/dnsadblock_0.2.33-beta.14_linux_armv6.tar.gz"
+        sha256 "243fdc126b59f3c55c7cea60911868c4e769d304c1a52bc2df041066ef07921c"
       end
     end
   end
