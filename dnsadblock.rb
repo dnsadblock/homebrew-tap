@@ -2,24 +2,24 @@
 class Dnsadblock < Formula
   desc "dnsadblock DNS Proxy"
   homepage "https://dnsadblock.com"
-  version "0.2.33-beta.0"
+  version "0.2.33-beta.1"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/dnsadblock/proxy-release/releases/download/v0.2.33-beta.0/dnsadblock_0.2.33-beta.0_darwin_amd64.tar.gz"
-    sha256 "fe0fc01923748e4d0049b32afa872e40e69510b019e6176bcc419d55a42e2444"
+    url "https://github.com/dnsadblock/proxy-release/releases/download/v0.2.33-beta.1/dnsadblock_0.2.33-beta.1_darwin_amd64.tar.gz"
+    sha256 "9cc8a23f7c326974222a138a40dc67c664ca83a67021ba46caa13360e29187ae"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/dnsadblock/proxy-release/releases/download/v0.2.33-beta.0/dnsadblock_0.2.33-beta.0_linux_amd64.tar.gz"
-      sha256 "97f8c0e450c9c7067f0c56dc0fd203d1d8b2decc8e1210befaed70f6b03a30dc"
+      url "https://github.com/dnsadblock/proxy-release/releases/download/v0.2.33-beta.1/dnsadblock_0.2.33-beta.1_linux_amd64.tar.gz"
+      sha256 "fcfba5e8e98f415c7f68ed29dd27c16a98d6ef69ddc911a3113a4ec59a3dbcfa"
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/dnsadblock/proxy-release/releases/download/v0.2.33-beta.0/dnsadblock_0.2.33-beta.0_linux_arm64.tar.gz"
-        sha256 "a36eb32346eff05e9969c0e554245740d4905cc2bd3b9e78e1186e48ef95369b"
+        url "https://github.com/dnsadblock/proxy-release/releases/download/v0.2.33-beta.1/dnsadblock_0.2.33-beta.1_linux_arm64.tar.gz"
+        sha256 "d70d3244a710dd5734a2afc1f7d55fc243a20e6f0472275f355e3d00cb761bef"
       else
-        url "https://github.com/dnsadblock/proxy-release/releases/download/v0.2.33-beta.0/dnsadblock_0.2.33-beta.0_linux_armv6.tar.gz"
-        sha256 "7ef60c11180332b31d7befc3fd756a38dd02cac4a531b555634523a5bc69c475"
+        url "https://github.com/dnsadblock/proxy-release/releases/download/v0.2.33-beta.1/dnsadblock_0.2.33-beta.1_linux_armv6.tar.gz"
+        sha256 "d46b715f14f3e9d7fe26b93e47b352211727e7141349cdf7a324070180bf35ed"
       end
     end
   end
