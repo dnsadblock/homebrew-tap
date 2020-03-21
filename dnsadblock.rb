@@ -2,24 +2,24 @@
 class Dnsadblock < Formula
   desc "dnsadblock DNS Proxy"
   homepage "https://dnsadblock.com"
-  version "0.2.33-beta.5"
+  version "0.2.33-beta.6"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/dnsadblock/proxy-release/releases/download/v0.2.33-beta.5/dnsadblock_0.2.33-beta.5_darwin_amd64.tar.gz"
-    sha256 "6306a9b99c2652728a145b31ac9c0d5dafbb2289656ecd8ee7592f26362eb979"
+    url "https://github.com/dnsadblock/proxy-release/releases/download/v0.2.33-beta.6/dnsadblock_0.2.33-beta.6_darwin_amd64.tar.gz"
+    sha256 "860d5f2ba66dc2333612ade55cec0a775f5124066b78bb55e1734e0d6dbe3967"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/dnsadblock/proxy-release/releases/download/v0.2.33-beta.5/dnsadblock_0.2.33-beta.5_linux_amd64.tar.gz"
-      sha256 "3eb86c0a17dc0456c822842595896594cc5abc9d6cd0bb803ed383dfcb436b21"
+      url "https://github.com/dnsadblock/proxy-release/releases/download/v0.2.33-beta.6/dnsadblock_0.2.33-beta.6_linux_amd64.tar.gz"
+      sha256 "fe2ca49e5a8f9a51ec1c200026163316ebe135ab2a6859ba15c0c346edf84c1a"
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/dnsadblock/proxy-release/releases/download/v0.2.33-beta.5/dnsadblock_0.2.33-beta.5_linux_arm64.tar.gz"
-        sha256 "d0f337c8d4ee4703df9c0e070f8a79717dd4ca924fb8727ce2e8a98ae3885db7"
+        url "https://github.com/dnsadblock/proxy-release/releases/download/v0.2.33-beta.6/dnsadblock_0.2.33-beta.6_linux_arm64.tar.gz"
+        sha256 "a85cefd3d06f23a274618ac982f0ed3b5acfe563fb97dedc2835b789c1e67e45"
       else
-        url "https://github.com/dnsadblock/proxy-release/releases/download/v0.2.33-beta.5/dnsadblock_0.2.33-beta.5_linux_armv6.tar.gz"
-        sha256 "5bd23db4c34ce3ab33c7cd3f7795c3d21180b79369e4f22babd464580f026320"
+        url "https://github.com/dnsadblock/proxy-release/releases/download/v0.2.33-beta.6/dnsadblock_0.2.33-beta.6_linux_armv6.tar.gz"
+        sha256 "4272e02cbd420f6d765872b4499a3728878207a557afd5f9ea76027092ae9392"
       end
     end
   end
