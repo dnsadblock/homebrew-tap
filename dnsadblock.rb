@@ -2,24 +2,24 @@
 class Dnsadblock < Formula
   desc "dnsadblock DNS Proxy"
   homepage "https://dnsadblock.com"
-  version "0.2.33-beta.2"
+  version "0.2.33-beta.3"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/dnsadblock/proxy-release/releases/download/v0.2.33-beta.2/dnsadblock_0.2.33-beta.2_darwin_amd64.tar.gz"
-    sha256 "1a6624575808a07d38695b63a30941277e604d572dcf6638b52a070f39dd81f0"
+    url "https://github.com/dnsadblock/proxy-release/releases/download/v0.2.33-beta.3/dnsadblock_0.2.33-beta.3_darwin_amd64.tar.gz"
+    sha256 "3811236659e62c35c3f9d89a2de61063c6b05d81162e87b534cc80e5c04e7e34"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/dnsadblock/proxy-release/releases/download/v0.2.33-beta.2/dnsadblock_0.2.33-beta.2_linux_amd64.tar.gz"
-      sha256 "9f66e90eba6f6200b67c9d5ebcc4e8d40ff1d81cf3ee832be18f2ad87bf64a1b"
+      url "https://github.com/dnsadblock/proxy-release/releases/download/v0.2.33-beta.3/dnsadblock_0.2.33-beta.3_linux_amd64.tar.gz"
+      sha256 "1000e08c659f44bb970c449511c737386b70bd88b61fbf854be78487f8d8abf1"
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/dnsadblock/proxy-release/releases/download/v0.2.33-beta.2/dnsadblock_0.2.33-beta.2_linux_arm64.tar.gz"
-        sha256 "e8b63441ee5798e86640b3eecbf21666bd6319323d7f171de36ed58b4631bb8a"
+        url "https://github.com/dnsadblock/proxy-release/releases/download/v0.2.33-beta.3/dnsadblock_0.2.33-beta.3_linux_arm64.tar.gz"
+        sha256 "6284cadc51b614297db01c78448aa70c2b6d4cd315ab4ce35aea37745e62b55d"
       else
-        url "https://github.com/dnsadblock/proxy-release/releases/download/v0.2.33-beta.2/dnsadblock_0.2.33-beta.2_linux_armv6.tar.gz"
-        sha256 "9e5ee282647670b2a550a79ade1a6f743d72486e708f107edbcc2e8be4bd0fa4"
+        url "https://github.com/dnsadblock/proxy-release/releases/download/v0.2.33-beta.3/dnsadblock_0.2.33-beta.3_linux_armv6.tar.gz"
+        sha256 "95305968baf1aeb054f7ae2099cf3b5081fe8557cfd1425eba5e365ee79660ef"
       end
     end
   end
