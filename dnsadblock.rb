@@ -2,24 +2,24 @@
 class Dnsadblock < Formula
   desc "dnsadblock DNS Proxy"
   homepage "https://dnsadblock.com"
-  version "0.2.33-beta.17"
+  version "0.2.34-beta.1"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/dnsadblock/proxy-release/releases/download/v0.2.33-beta.17/dnsadblock_0.2.33-beta.17_darwin_amd64.tar.gz"
-    sha256 "8a37c453e2205b9f7d988478319182683f4f81307abd3efeb5bfb45863f794d5"
+    url "https://github.com/dnsadblock/proxy-release/releases/download/v0.2.34-beta.1/dnsadblock_0.2.34-beta.1_darwin_amd64.tar.gz"
+    sha256 "dcdab0c3d975369b6a71be3f716dbbfcc80eb9de9c1a53dce96fca3102aec7ce"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/dnsadblock/proxy-release/releases/download/v0.2.33-beta.17/dnsadblock_0.2.33-beta.17_linux_amd64.tar.gz"
-      sha256 "1cdc3ccdfcd38e3a7c691fd3050551d4c3c202cfafbea5eb35a52a3627ecdea2"
+      url "https://github.com/dnsadblock/proxy-release/releases/download/v0.2.34-beta.1/dnsadblock_0.2.34-beta.1_linux_amd64.tar.gz"
+      sha256 "188f44b8dba5892382404316aa8c6f693849e16c7013aafa3283c43450313300"
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/dnsadblock/proxy-release/releases/download/v0.2.33-beta.17/dnsadblock_0.2.33-beta.17_linux_arm64.tar.gz"
-        sha256 "8ef321996ca1c2da70504acdb51a8319ece074a962e0db969984c7a737269182"
+        url "https://github.com/dnsadblock/proxy-release/releases/download/v0.2.34-beta.1/dnsadblock_0.2.34-beta.1_linux_arm64.tar.gz"
+        sha256 "9f5ea6f62028720527add0613f2e59abc63cbf20a2b7e4c0fe51dd1a467a8698"
       else
-        url "https://github.com/dnsadblock/proxy-release/releases/download/v0.2.33-beta.17/dnsadblock_0.2.33-beta.17_linux_armv6.tar.gz"
-        sha256 "39b56534f18d6317c5aecc830b77a6f642148389e959501173bddd9926ceb006"
+        url "https://github.com/dnsadblock/proxy-release/releases/download/v0.2.34-beta.1/dnsadblock_0.2.34-beta.1_linux_armv6.tar.gz"
+        sha256 "2b9ff0acf6dde90c37cc528dfaa70af6729e3a5666ca7371274c631011f03378"
       end
     end
   end
