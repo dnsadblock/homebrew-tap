@@ -2,24 +2,24 @@
 class Dnsadblock < Formula
   desc "dnsadblock DNS Proxy"
   homepage "https://dnsadblock.com"
-  version "0.2.55"
+  version "0.2.57"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/dnsadblock/proxy-release/releases/download/v0.2.55/dnsadblock_0.2.55_darwin_amd64.tar.gz"
-    sha256 "322860964ad1f105df79b71662fffc483fca134ac2ef063e671cd8e4277e143d"
+    url "https://github.com/dnsadblock/proxy-release/releases/download/v0.2.57/dnsadblock_0.2.57_darwin_amd64.tar.gz"
+    sha256 "e4eab25d434ffba405249142208d2d2049c8ed0370bc9d30c2f9204c455f1866"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/dnsadblock/proxy-release/releases/download/v0.2.55/dnsadblock_0.2.55_linux_amd64.tar.gz"
-      sha256 "900fb3e61adfabad177020646dd2928ddd12cc50dceb51c6d2fcbbe074ec1c0e"
+      url "https://github.com/dnsadblock/proxy-release/releases/download/v0.2.57/dnsadblock_0.2.57_linux_amd64.tar.gz"
+      sha256 "6da29dd74dc8606b62950edc5a99d66e1c32ff5ae4d8a8465a65e6ed4af1747b"
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/dnsadblock/proxy-release/releases/download/v0.2.55/dnsadblock_0.2.55_linux_arm64.tar.gz"
-        sha256 "9b67d6120e7dc78d2e751a60fc3f76cfbb3666722267aa1184f1730f91962a77"
+        url "https://github.com/dnsadblock/proxy-release/releases/download/v0.2.57/dnsadblock_0.2.57_linux_arm64.tar.gz"
+        sha256 "e12348262b012119f491f56eeb7058f62afae3d4f3046879345c5a28a2e666b7"
       else
-        url "https://github.com/dnsadblock/proxy-release/releases/download/v0.2.55/dnsadblock_0.2.55_linux_armv6.tar.gz"
-        sha256 "4243f6700abe0e87be9d450ec5c020cb4bae5299e711d2dfc97232100179ce79"
+        url "https://github.com/dnsadblock/proxy-release/releases/download/v0.2.57/dnsadblock_0.2.57_linux_armv6.tar.gz"
+        sha256 "7a4a528c9af611f260c3a033e888bf299de91bd35e90f098d802a4c39922e9cb"
       end
     end
   end
