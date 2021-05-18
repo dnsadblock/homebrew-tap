@@ -5,28 +5,28 @@
 class Dnsadblock < Formula
   desc "DnsAdBlock DNS Proxy"
   homepage "https://dnsadblock.com"
-  version "0.2.68"
+  version "0.2.69"
   bottle :unneeded
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/dnsadblock/proxy-release/releases/download/v0.2.68/dnsadblock_0.2.68_darwin_amd64.tar.gz"
-    sha256 "1e0b83bd9f0242b1a2b081c815f94fa8607d20fb3b4ebe12853290f9e4009caf"
+    url "https://github.com/dnsadblock/proxy-release/releases/download/v0.2.69/dnsadblock_0.2.69_darwin_amd64.tar.gz"
+    sha256 "57f19f2a5c38b0c87aca15bbeb169eedc9815179084f5ba871ef896cb172eea1"
   end
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/dnsadblock/proxy-release/releases/download/v0.2.68/dnsadblock_0.2.68_darwin_arm64.tar.gz"
-    sha256 "96e8b5c9fb492a79dc482ea7a7253e9d1c3a5ff76512a0a1cdc939a11d32f400"
+    url "https://github.com/dnsadblock/proxy-release/releases/download/v0.2.69/dnsadblock_0.2.69_darwin_arm64.tar.gz"
+    sha256 "ae18adb60145dbc90917094926da756cf788901d8047bc8210fd641ea1de5bad"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/dnsadblock/proxy-release/releases/download/v0.2.68/dnsadblock_0.2.68_linux_amd64.tar.gz"
-    sha256 "c7b019cd268045e1e18d04b577a44156671daa3d92d3fbd298d78926700e1c98"
+    url "https://github.com/dnsadblock/proxy-release/releases/download/v0.2.69/dnsadblock_0.2.69_linux_amd64.tar.gz"
+    sha256 "04cab324cfa6c80371ae8d5be1c3bf010b8da09aab2d095abdd78ffd990ae5e0"
   end
   if OS.linux? && Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-    url "https://github.com/dnsadblock/proxy-release/releases/download/v0.2.68/dnsadblock_0.2.68_linux_armv6.tar.gz"
-    sha256 "5a402c104f07f6cdb3756f18e59ce1bae81a9e046609e47a830a6b235d270b58"
+    url "https://github.com/dnsadblock/proxy-release/releases/download/v0.2.69/dnsadblock_0.2.69_linux_armv6.tar.gz"
+    sha256 "101aae2adb77963d7ae0771c3114a33ff0bfe310e4d52675911820b11958efa0"
   end
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/dnsadblock/proxy-release/releases/download/v0.2.68/dnsadblock_0.2.68_linux_arm64.tar.gz"
-    sha256 "3ceada1548c4d17ae06f025dee8fa34d26d2833b0bbf233301842f93a73df22e"
+    url "https://github.com/dnsadblock/proxy-release/releases/download/v0.2.69/dnsadblock_0.2.69_linux_arm64.tar.gz"
+    sha256 "ac1d82c26dbc0291c09d6655e3dfb8dd9d97c3f1ad845b686d7633f5cd3c1a2d"
   end
 
   def install
