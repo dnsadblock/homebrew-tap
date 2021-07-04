@@ -5,37 +5,33 @@
 class Dnsadblock < Formula
   desc "DnsAdBlock DNS Proxy"
   homepage "https://dnsadblock.com"
-  version "0.2.173"
+  version "0.2.183"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/dnsadblock/proxy-release/releases/download/v0.2.173/dnsadblock_0.2.173_darwin_amd64.tar.gz"
-      sha256 "46f96dab5101205e8f4f5b7cf49222bbe35e0602679740b6c42937b56ebbe756"
+      url "https://github.com/dnsadblock/proxy-release/releases/download/v0.2.183/dnsadblock_0.2.183_darwin_amd64.tar.gz"
+      sha256 "b5120dec27448b8d77e5cbfed4f2997a97868756e2215859efe1ac0697efb6e2"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/dnsadblock/proxy-release/releases/download/v0.2.173/dnsadblock_0.2.173_darwin_arm64.tar.gz"
-      sha256 "6ab9450aa7668a247b85e31a9169c12049558f2e956d041f534b9ecb5866de4e"
+      url "https://github.com/dnsadblock/proxy-release/releases/download/v0.2.183/dnsadblock_0.2.183_darwin_arm64.tar.gz"
+      sha256 "14bbee2b91f1c7689d20d31b152e600fdfc813402528b3d6ef9caae9f88d8f86"
     end
-
-    depends_on arch: [:x86_64, :aarch64]
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/dnsadblock/proxy-release/releases/download/v0.2.173/dnsadblock_0.2.173_linux_amd64.tar.gz"
-      sha256 "39bec60f3f88c998366140932eb14bbf62776706aa4a2b4ccf122e2a6d6a66dc"
+      url "https://github.com/dnsadblock/proxy-release/releases/download/v0.2.183/dnsadblock_0.2.183_linux_amd64.tar.gz"
+      sha256 "7b047313f5b1fa1fc65c21196d94d2c9a3e8779fe495fdf49a97a4771cd775b8"
     end
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/dnsadblock/proxy-release/releases/download/v0.2.173/dnsadblock_0.2.173_linux_armv6.tar.gz"
-      sha256 "ae37ec2db8f26f1acff13ca2b223671f7e90bbce355a0ffe22b9bd5793f6a40d"
+      url "https://github.com/dnsadblock/proxy-release/releases/download/v0.2.183/dnsadblock_0.2.183_linux_armv6.tar.gz"
+      sha256 "5202a8e9fd012f18773896b9b8dc02fb1d7535bb47843cbcce61fb4e7abb002b"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dnsadblock/proxy-release/releases/download/v0.2.173/dnsadblock_0.2.173_linux_arm64.tar.gz"
-      sha256 "a9565dac1d2b72c4b82671376ca07489f1b557116846967900eb530821209558"
+      url "https://github.com/dnsadblock/proxy-release/releases/download/v0.2.183/dnsadblock_0.2.183_linux_arm64.tar.gz"
+      sha256 "1250a72d84f663b9318b6af59172d253ba57cab7a354e10049b04b8953dfd0bf"
     end
-
-    depends_on arch: [:x86_64, :aarch64, :arm]
   end
 
   def install
